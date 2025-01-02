@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Dark background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    background-color: rgba(32, 31, 31, 0.854);
+    padding: 50px;
+    gap: 40px;
+    flex-grow: 1; /* Allow nav to grow and take space between logo and footer */
+    text-align: center;
+}
+
+nav a {
+    color: rgb(249, 241, 241);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+.gallery-container {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.gallery-container img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for lift and shadow */
+}
+
+.gallery-container img:hover {
+    transform: translateY(-10px); /* Lifts the image upward by 10px */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow for the lift effect */
+}
+-
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    color: rgb(249, 241, 241); /* Light gray text */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: rgb(249, 241, 241);
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: rgba(255, 255, 255, 0.2); /* White on hover */
+}

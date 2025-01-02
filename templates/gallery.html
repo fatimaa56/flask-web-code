@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='gallery.css') }}"> 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('services') }}">Services</a>
+                <a href="{{ url_for('about') }}">About Us </a>
+                <a href="{{ url_for('contact') }}">Contact Us</a>
+                <a href="{{ url_for('login') }}">Login </a>
+                <a href="{{ url_for('register') }}">Registeration</a>
+                <a href="{{ url_for('gallery') }}">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <img src="https://th.bing.com/th/id/OIP.TjMRUQqswwg3bP5a4_H02QHaDt?rs=1&pid=ImgDetMain">
+        <img src="https://th.bing.com/th/id/OIP.Qn4c22V_4Z5jFnke7bDXbgHaDt?w=552&h=276&rs=1&pid=ImgDetMain">
+        <img src="https://th.bing.com/th/id/OIP.dIgNg_-ucb7fn95ckZip2QHaE8?rs=1&pid=ImgDetMain">
+        <img src="https://th.bing.com/th/id/OIP.WV4OLaMbAKI9DqqMLUorqQHaE8?rs=1&pid=ImgDetMain">
+        <img src="https://th.bing.com/th/id/OIP.L14ePBhKEDATdsVNc_PhAQHaEo?w=1024&h=640&rs=1&pid=ImgDetMain">
+        <img src="https://th.bing.com/th/id/R.daccfc0195333dc3280d530cc37b0b44?rik=Az%2bYWOHGqOLncA&pid=ImgRaw&r=0">
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Event Aura . All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Aura</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav >
+            <img src="https://th.bing.com/th/id/OIP.Sx63nejmzqhmXuZHM5KmAQHaHa?rs=1&pid=ImgDetMain" class="logo" >
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('about') }}">About Us </a>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+            <a href="{{ url_for('login') }}">Login </a>
+            <a href="{{ url_for('register') }}">Registeration</a>
+            <a href="{{ url_for('gallery') }}">Gallery</a>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="content">
+            <h1>EVENT AURA</h1>
+            <p>'Turning Your Dreams into Reality <br> With Perfect Celebrations'</p>
+            <a href="{{ url_for('contact') }}">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Event Aura. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Dark background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    background-color: rgba(32, 31, 31, 0.854);
+    padding: 50px;
+    gap: 40px;
+    flex-grow: 1; /* Allow nav to grow and take space between logo and footer */
+    text-align: center;
+}
+
+nav a {
+    color: rgb(249, 241, 241);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    position: relative;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://static.wixstatic.com/media/f559ca_e0f8c64bdc8d4ad2be6d54cee6dc0d7d~mv2.png/v1/fill/w_980,h_544,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f559ca_e0f8c64bdc8d4ad2be6d54cee6dc0d7d~mv2.png') no-repeat center center/cover;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+/* Login Form Content */
+.login-content {
+    background-color: rgba(32, 31, 31, 0.9); /* Slightly lighter dark background for the form */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-image: url('https://static.wixstatic.com/media/f559ca_e0f8c64bdc8d4ad2be6d54cee6dc0d7d~mv2.png/v1/fill/w_980,h_544,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f559ca_e0f8c64bdc8d4ad2be6d54cee6dc0d7d~mv2.png');
+}
+
+/* Heading */
+.login-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f4d03f; /* Gradient gold color for heading */
+    background: linear-gradient(90deg, #f4d03f, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input Fields */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ebdfdf; /* Dark input fields */
+    color: rgb(10, 6, 6);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input:focus {
+    background-color: #787777; /* Slightly lighter input field on focus */
+    outline: none;
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4d03f; /* Gold button color */
+    color: #504e4e;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f5c71a; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Button expands slightly on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Links Styling */
+.login-content a {
+    color: #f4d03f;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.login-content a:hover {
+    color: #e8e8e8; /* Light gold on hover */
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    color: rgb(249, 241, 241); /* Light gray text */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: rgb(249, 241, 241);
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: rgba(255, 255, 255, 0.2); /* White on hover */
+}

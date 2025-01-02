@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Aura - About Us</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('services') }}">Services</a>
+        <a href="{{ url_for('about') }}">About Us </a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <a href="{{ url_for('login') }}">Login </a>
+        <a href="{{ url_for('register') }}">Registeration</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Adding class="header" to link with CSS -->
+    <header class="header">
+        <h1>About Us</h1>
+        <p>Welcome to Event Aura, where your dreams turn into memorable events. We are a passionate and creative team dedicated to crafting extraordinary experiences tailored just for you. From intimate gatherings to grand celebrations, we handle every detail to make your event truly unforgettable.</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-us">
+        <h2>Who We Are</h2>
+        <p>We specialize in planning and executing:
+
+            Weddings and engagements
+            Corporate events and conferences
+            Birthday parties and private celebrations
+            Product launches and promotional events
+            Festivals and community events
+            No matter the occasion, we make it our mission to ensure every event is as unique as you are.</p>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="our-team">
+        <h2>Our Team</h2>
+        <p>Our team is made up of experienced planners, designers, and coordinators who share a common goal: to create unforgettable experiences. With a keen eye for detail and a passion for perfection, we work tirelessly to turn your vision into reality.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is simple: to take the stress out of planning while delivering exceptional results. We believe in creating moments that matter by blending creativity, meticulous attention to detail, and unmatched professionalism. Every event we plan is a unique reflection of our clients' style and personality.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Event Aura . All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
